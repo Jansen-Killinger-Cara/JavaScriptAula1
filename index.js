@@ -1,4 +1,4 @@
-const ListaDePecas = ['Peca de teste', 'Ar', Peca B']
+const ListaDePecas = ['Peca de teste', 'Ar', 'Peca B']
 console.log('Quantidade de caracteres')
 
 if (ListaDePecas.length <= 10) {
@@ -6,8 +6,8 @@ if (ListaDePecas.length <= 10) {
 }
 console.log('Quantidade de caracteres');
 for (let index = 0; index < ListaDePecas.length; index ++) {
-    const PecaAtual = ListaDePecas[index];
-    if (PecaAtual.length <= 3) {
+    var PecaAtual = ListaDePecas[index];
+    if (PecaAtual.length < 3) {
         console.log(PecaAtual + ': esta peça possui nome inferior a 3 caracteres!')
 
     } else {
@@ -15,7 +15,7 @@ for (let index = 0; index < ListaDePecas.length; index ++) {
     }
 }
 console.log('Peso da Peça')
-const PesoDaPeca = 50;
+var PesoDaPeca = 50;
 if (PesoDaPeca >=100) {
     console.log('Peso suficiente.')
 } else {
